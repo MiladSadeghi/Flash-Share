@@ -22,11 +22,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
+    <body
         className={`${figtree.variable}`}
-      >
-        {children}
-      </body>
+    >
+    <div className={"h-dvh bg-black w-full "}>
+        <div className={"container mx-auto h-full"}>
+            {children}
+        </div>
+    </div>
+    </body>
     </html>
-  );
+);
 }
